@@ -1,0 +1,40 @@
+html {
+  height: 100%; 
+}
+body {
+  margin:0; 
+  background-color: rgb(184, 169, 173);
+  height: 100%;
+}
+.board{
+  text-align: center;
+  background-color: rgb(84, 91, 197);
+  color:white;
+  padding:50px;
+  font-size: 25px;
+}
+.hide {
+  display: none;
+}
+.input_group{
+  display:flex;
+}
+
+.city-info {
+  background-color: rgb(115, 121, 122);
+}
+.row #forecast {
+padding-left: 25px;
+
+justify-content: space-between;
+}
+
+.card {
+  background-color:aliceblue
+}
+
+.savedCityBtn {
+  color:rgb(182, 31, 31);
+  background-color:rgba(240, 255, 240, 0.185);
+  font-weight: bold;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Weather Dashboard</title>
+</head>
+
+<body>
+  <header class="board">
+    <h1>WEATHER DASHBOARD</h1>
+  </header>
+
+  <div class="main-container">
+    <div class="row content-row">
+      <div class="col-12 col-md-3 pt-3">
+        <h2>Search for a city:</h2>
+        <form>
+          <div class="input_group mb-3">
+            <input type="text" class="form-control" id="inputCity" placeholder="Enter city Name">
+            <div class="input-group-append">
+              <button type="button" class="btn btn-outline-primary" id="searchBtn">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+        <div class="card">
+          <ul id="cityList" class="list-group list-group-flush">
+          </ul>
+          <button id="clearHistory" class="btn btn-sm btn-secondary hide">Clear History</button>
+        </div>
+      </div>
+
+      <div id="weatherContainer" class="col-12 col-md-9 hide">
+        <div class="row">
+          <div class="col-12">
+            <div class="city-info border rounded my-3 px-3 py-3">
+              <h2 id="cityResult" class="cardTitle"></h2>
+              <p id="tempResult" class="cardText"></p>
+              <p id="windResult" class="cardText"></p>
+              <p id="humidityResult" class="cardText"></p>
+            </div>
+          </div>
+        </div>
+
+        <!------- ForeCast Continer-->
+        <div class="row">
+          <div class="col-md-12">
+            <h2 id="forecastContainer" class="forecastContainer  ">5-Day Forecast:</h2>
+          </div>
+
+          <div id="forecast" class="row">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
