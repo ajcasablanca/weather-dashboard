@@ -15,19 +15,19 @@
 </head>
 
 <body>
-  <header class="board">
+  <header class="dashboard">
     <h1>WEATHER DASHBOARD</h1>
   </header>
 
-  <div class="main-container">
+  <div class="mainContainer">
     <div class="row content-row">
       <div class="col-12 col-md-3 pt-3">
         <h2>Search for a city:</h2>
         <form>
-          <div class="input_group mb-3">
+          <div class="inputContainter mb-3">
             <input type="text" class="form-control" id="inputCity" placeholder="Enter city Name">
             <div class="input-group-append">
-              <button type="button" class="btn btn-outline-primary" id="searchBtn">
+              <button type="button" class="btn btn-outline-primary btn-secondary" id="searchBtn">
                 <i class="fa fa-search"></i>
               </button>
             </div>
@@ -36,14 +36,14 @@
         <div class="card">
           <ul id="cityList" class="list-group list-group-flush">
           </ul>
-          <button id="clearHistory" class="btn btn-sm btn-secondary hide">Clear History</button>
+          <button id="clearHistory" class="btn btn-sm btn-secondary ">Clear History</button>
         </div>
       </div>
 
       <div id="weatherContainer" class="col-12 col-md-9 hide">
         <div class="row">
           <div class="col-12">
-            <div class="city-info border rounded my-3 px-3 py-3">
+            <div class="cityInfo border rounded my-3 px-3 py-3">
               <h2 id="cityResult" class="cardTitle"></h2>
               <p id="tempResult" class="cardText"></p>
               <p id="windResult" class="cardText"></p>
@@ -52,7 +52,6 @@
           </div>
         </div>
 
-        <!------- ForeCast Continer-->
         <div class="row">
           <div class="col-md-12">
             <h2 id="forecastContainer" class="forecastContainer  ">5-Day Forecast:</h2>

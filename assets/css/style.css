@@ -3,12 +3,12 @@ html {
 }
 body {
   margin:0; 
-  background-color: rgb(184, 169, 173);
+  background-color: rgb(114, 118, 179);
   height: 100%;
 }
-.board{
+.dashboard{
   text-align: center;
-  background-color: rgb(84, 91, 197);
+  background-color: rgb(18, 30, 197);
   color:white;
   padding:50px;
   font-size: 25px;
@@ -16,12 +16,12 @@ body {
 .hide {
   display: none;
 }
-.input_group{
+.inputContainter{
   display:flex;
 }
 
-.city-info {
-  background-color: rgb(115, 121, 122);
+.cityInfo {
+  background-color: rgba(144, 163, 144, 0.185);
 }
 .row #forecast {
 padding-left: 25px;
@@ -30,11 +30,10 @@ justify-content: space-between;
 }
 
 .card {
-  background-color:aliceblue
+  background-color:rgb(129, 150, 170)
 }
 
 .savedCityBtn {
-  color:rgb(182, 31, 31);
+  color:rgb(197, 5, 5);
   background-color:rgba(240, 255, 240, 0.185);
   font-weight: bold;
-}
